@@ -5,7 +5,7 @@ node_js:
 
 env:
   global:
-    - GROUP=288971733297.dkr.ecr.us-east-1.amazonaws.com # {AWS account ID}.dkr.ecr.us-east-1
+    - GROUP=710723170051.dkr.ecr.eu-west-1.amazonaws.com # {AWS account ID}.dkr.ecr.eu-west-1
     - TAG=$GIT_TAG_NAME
     - IMAGE_TAG=$BRANCH.$BUILD_NUMBER
     - REPO=front-end
@@ -28,7 +28,7 @@ integrations:
   hub:
     - integrationName: shippable-ecr  # must match Subscription Integration in Shippable
       type: ecr
-      region: us-east-1
+      region: eu-west-1
 
   notifications:
     - integrationName: trigger-img-front-end
